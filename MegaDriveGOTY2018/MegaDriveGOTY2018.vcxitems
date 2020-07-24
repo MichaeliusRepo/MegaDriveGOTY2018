@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{071e240a-9f72-4d78-ba70-545bc42d3423}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Components.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Entities.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Model.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\main.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Systems.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\types.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\audio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\images.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\sprites.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\main.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Entities.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Model.c" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Systems.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Gemu\CompileROM.lnk" />
+    <None Include="$(MSBuildThisFileDirectory)Gemu\Fusion.exe - Genvej.lnk" />
+  </ItemGroup>
+</Project>

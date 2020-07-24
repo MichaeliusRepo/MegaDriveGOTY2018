@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Include">
+      <UniqueIdentifier>{b191230b-5807-4a5b-9434-1b96b5e72ee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sauce">
+      <UniqueIdentifier>{8f098d3e-6d9f-4c8a-9048-54db2ff69802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{34c32cd4-e267-43e0-b3f1-54c426ed702c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ECS Architecture">
+      <UniqueIdentifier>{e4ce21b7-b4b5-4c2a-9f94-e920217a9ee5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Components.h">
+      <Filter>ECS Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Entities.h">
+      <Filter>ECS Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Systems.h">
+      <Filter>ECS Architecture</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\Model.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\main.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\inc\types.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\images.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\audio.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Gemu\res\sprites.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Entities.c">
+      <Filter>ECS Architecture</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Systems.c">
+      <Filter>ECS Architecture</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\src\Model.c">
+      <Filter>Sauce</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)Gemu\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Gemu\CompileROM.lnk" />
+    <None Include="$(MSBuildThisFileDirectory)Gemu\Fusion.exe - Genvej.lnk" />
+  </ItemGroup>
+</Project>
